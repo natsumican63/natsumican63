@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+
+$background:#f9f9f9;
+$font_color:#2d261f;
+$link_color:#5fb8ac;
+
+html {
+  background: $background;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  width: 0;
+  height: 1rem;
+  font-family: 'Josefin Slab', serif,"游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  color:$font_color;
+  line-height: 1.9em;
+  letter-spacing: 0.2em;
+  background: linear-gradient(to right, rgb(255, 235, 244) 0%, rgb(239, 248, 255) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+h1 {
+  padding: 1em;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8em;
+  margin: .5em;
+}
+
+a {
+  color: $link_color;
+}
+
+
+#main {
+  z-index: -1;
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  ul > li {
+    width: 100%;
+    min-height: 800px;
+    position: fixed;
+    z-index: -2;
+  }
+}
+
+.wrap {
+  opacity: 0;
+}
+
+#bgm {
+  margin: 0.4em;
+  display:inline-block;
+  font-size:3em;
+  cursor: pointer;
+}
+
+.bgm_btn {
+  width:300px;
+  margin:15px 0;
+  position:absolute;
+  top:0;
+}
+
+.layer {
+  width: 100%;
+  min-height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+@mixin move{
+  animation: move linear 20s infinite both;
+}
+
+.layer-ribbon {
+  background: url(../img/ribbon.png) 0 100% repeat-x;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include move;
+}
+
+.layer-bg {
+  background: url("../img/bg.png") repeat;
+  animation: move linear 20s infinite both;
+  @include move;
+}
+
+.layer-horse-01 {
+  background: url("../img/layer01.png") no-repeat;
+  background-position: right top;
+  animation: horses-animation 3s linear infinite;
+}
+
+.layer-horse-02 {
+  background: url("../img/layer02.png") no-repeat;
+  background-position: center top;
+  animation: horses-animation 4s linear infinite;
+}
+
+.layer-horse-03 {
+  background: url("../img/layer03.png") no-repeat;
+  background-position: left top;
+  animation: horses-animation 3s linear infinite;
+}
+
+.line {
+  background: url("../img/line.png") no-repeat bottom center;
+}
+
+.overlay {
+  background-image: url("../img/overlay.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#about {
+  padding: 1em;
+  text-align: center;
+  background-color: $background;
+  img {
+    width: 200px;
+    border-radius: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+
+  ul.social-icons {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 40px;
+
+    li {
+      display: inline-block;
+      margin: 0 12px
+    }
+
+    li > a {
+    	display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 54px;
+    	background-color: #bbbbbb;
+    	color: #FFF;
+      font-size: 1.4em;
+    	border-radius: 50%;
+    	text-align: center;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes horses-animation {
+  50% {
+    margin-top: -50px;
+  }
+}
+
+.wave {
+  background: transparent repeat-x;
+  position: absolute;
+  width: 300%;
+  height: 160px;
+  bottom: -15%;
+  left: -100%;
+  &:after {
+    background: url(../img/g.png) repeat-x;
+    position: absolute;
+    display: block;
+    content: "";
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+.wave.depth-30 {
+  animation: wave 7.11111s 0.1s infinite linear;
+  bottom: -4%;
+  &:after {
+    height: 250px;
+  }
+}
+.wave.depth-40 {
+  animation: wave 6.66667s 0.1s infinite linear;
+  bottom: -6%;
+  &:after {
+    height: 250px;
+  }
+}
+.wave.depth-50 {
+  animation: wave 6.22222s 0.1s infinite linear;
+  bottom: -10%;
+  &:after {
+    height: 250px;
+  }
+}
+.wave.depth-60 {
+  -moz-animation: wave 5.77778s 0.1s infinite linear;
+  animation: wave 5.77778s 0.1s infinite linear;
+  bottom: -14%;
+  &:after {
+    height: 250px;
+  }
+}
+.wave.depth-70 {
+  animation: wave 5.33333s 0.1s infinite linear;
+  bottom: -18%;
+  &:after {
+    height: 260px;
+  }
+}
+.wave.depth-80 {
+  -moz-animation: wave 4.88889s 0.1s infinite linear;
+  animation: wave 4.88889s 0.1s infinite linear;
+  bottom: -22%;
+  &:after {
+    height: 260px;
+  }
+}
+.wave.depth-100 {
+  -moz-animation: wave 4s 0.1s infinite linear;
+  animation: wave 4s 0.1s infinite linear;
+  bottom: -26%;
+  &:after {
+    height: 260px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+
+
+@media screen and (max-width: 480px){
+  .layer-horse-02 , .layer-horse-03 {
+    display: none !important;
+  }
+  .layer-horse-01{
+    background: url("../img/sp_layer01.png") no-repeat !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+  .layer {
+    min-height: 580px;
+  }
+	.wave {
+    background: transparent repeat-x;
+    position: absolute;
+    width: 250%;
+    height: 100px;
+    bottom: -15%;
+    left: -100%;
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 100px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
