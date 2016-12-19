@@ -17,7 +17,7 @@ body {
   width: 0;
   height: 1rem;
   font-family: 'Josefin Slab', serif,"游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
-  color: #2d261f;
+  color: #38332c;
   line-height: 1.9em;
   letter-spacing: 0.2em;
   background: -webkit-linear-gradient(left, #ffebf4 0%, #eff8ff 100%);
@@ -321,7 +321,7 @@ footer ul.social-icons li > a {
 }
 
 @media screen and (max-width: 480px) {
-  .layer-horse-02, .layer-horse-03 {
+  .layer-horse-02, .layer-horse-03, .line {
     display: none !important;
   }
   .layer-horse-01 {

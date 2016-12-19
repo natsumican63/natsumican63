@@ -2,7 +2,7 @@
 
 
 $background:#f9f9f9;
-$font_color:#2d261f;
+$font_color:#38332c;
 $link_color:#5fb8ac;
 
 html {
@@ -278,7 +278,7 @@ footer {
 
 
 @media screen and (max-width: 480px){
-  .layer-horse-02 , .layer-horse-03 {
+  .layer-horse-02 , .layer-horse-03, .line {
     display: none !important;
   }
   .layer-horse-01{
