@@ -1,5 +1,5 @@
 # 自己紹介サイト
 
-https://natsumican63.github.io/natsumican63/
+https://natsumican63.github.io/
 
 よろしくおねがいします。
