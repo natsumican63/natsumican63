@@ -20,7 +20,6 @@ body {
   color: #38332c;
   line-height: 1.9em;
   letter-spacing: 0.2em;
-  background: -webkit-linear-gradient(left, #ffebf4 0%, #eff8ff 100%);
   background: linear-gradient(to right, #ffebf4 0%, #eff8ff 100%);
   position: absolute;
   top: 0;
@@ -64,20 +63,6 @@ a {
 
 .wrap {
   opacity: 0;
-}
-
-#bgm {
-  margin: 0.4em;
-  display: inline-block;
-  font-size: 3em;
-  cursor: pointer;
-}
-
-.bgm_btn {
-  width: 300px;
-  margin: 15px 0;
-  position: absolute;
-  top: 0;
 }
 
 .layer {
@@ -167,15 +152,7 @@ footer ul.social-icons li {
 }
 
 footer ul.social-icons li > a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 54px;
-  background-color: #bbbbbb;
-  color: #FFF;
-  font-size: 1.4em;
-  border-radius: 50%;
-  text-align: center;
+  font-size: 2rem;
 }
 
 @-webkit-keyframes move {

@@ -70,20 +70,6 @@ a {
   opacity: 0;
 }
 
-#bgm {
-  margin: 0.4em;
-  display:inline-block;
-  font-size:3em;
-  cursor: pointer;
-}
-
-.bgm_btn {
-  width:300px;
-  margin:15px 0;
-  position:absolute;
-  top:0;
-}
-
 .layer {
   width: 100%;
   min-height: 800px;
@@ -167,15 +153,7 @@ footer {
     }
 
     li > a {
-    	display: block;
-      width: 50px;
-      height: 50px;
-      line-height: 54px;
-    	background-color: #bbbbbb;
-    	color: #FFF;
-      font-size: 1.4em;
-    	border-radius: 50%;
-    	text-align: center;
+      font-size: 2rem;
     }
   }
 }
